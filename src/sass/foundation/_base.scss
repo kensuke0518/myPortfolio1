@@ -1,0 +1,30 @@
+body{
+    font-family: "Helvetica Neue",
+    Arial,
+    "Hiragino Kaku Gothic ProN",
+    "Hiragino Sans",
+    "BIZ UDPGothic",
+    Meiryo,
+    sans-serif;
+}
+a{
+    color: blue;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+/* box-sizingの指定 https://jajaaan.co.jp/web-production/frontend/box-sizing/ */
+html{
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+
+li{
+    list-style: none;
+}
