@@ -8,6 +8,7 @@
   },
   "scripts": {
     "compile:sass": "node-sass src/sass -o docs/common/css --output-style compressed --source-map true",
+    "compileProduction:sass": "node-sass src/sass -o docs/common/css --output-style compressed --source-map false",
     "lint:sass": "stylelint \"src/**/*.scss\"",
     "format:sass": "stylelint --fix \"src/**/*.scss\"",
     "mq": "postcss src/sass/style.scss -u css-mqpacker -o docs/common/css/style.css",
