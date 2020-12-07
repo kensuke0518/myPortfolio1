@@ -4,16 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>K Portfolio</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
     <link rel="stylesheet" href="common/css/style.css">
 </head>
 <body>
     <header>
         <div id="header">
-            <h1 class="header__title01">ポートフォリオ</h1>
+            <h1 class="header__heading01">ポートフォリオ</h1>
             <nav class="gnav">
                 <ul class="gnav__list">
-                    <li class="gnav__item"><a href="#">制作物やアウトプット</a></li>
-                    <li class="gnav__item"><a href="#">使用言語や技術</a></li>
+                    <li class="gnav__item"><a href="#section01"><i class="fas fa-chevron-down"></i> 制作物やアウトプット</a></li>
+                    <li class="gnav__item"><a href="#section02"><i class="fas fa-chevron-down"></i> 使用言語や技術</a></li>
                 </ul>
             </nav>
         </div>
@@ -21,99 +22,124 @@
     <div class="p-introduction">
         <video class="p-introduction__video" src="./common/videos/sample.mp4" loop muted autoplay></video>
         <section class="p-introduction__section">
-            <h2 class="p-introduction__title fade-in-left">森永健介</h2>
+            <h2 class="p-introduction__heading u-fade-in-left">森永健介</h2>
             <p class="p-introduction__text">Web制作・マーケティング会社にマークアップエンジニアとして、6年間受託業務に従事していました。</p>
         </section>
     </div>
     <p class="c-copyright u-align__right">映像：ＮＨＫクリエイティブ・ライブラリー</p>
     <main>
         <div id="main">
-            <section class="p-explan" id="#section01">
-                <h2 class="p-explan__title fade-in-left"><span>制作物とアウトプット</span></h2>
-                <section>
-                    <h3 class="p-explan__block-title fade-in-left"><span>プラットフォーム</span></h3>
-                    <ul class="p-explan__block fade-in-left">
-                        <li class="p-explan__block-item"><a href="https://github.com/kensuke0518" target="_blank">Github</a>（別ウインドウで開きます）</li>
-                        <li class="p-explan__block-item"><a href="https://codepen.io/ken5uke0518/pens/public?cursor=ZD0xJm89MCZwPTEmdj00MDQxNTQwNQ==" target="_blank">CodePen</a>（別ウインドウで開きます）</li>
+            <section class="p-explan" id="section01">
+                <h2 class="p-explan__heading-02 u-fade-in-left"><span>制作物とアウトプット</span></h2>
+                <section class="u-mb20">
+                    <h3 class="p-explan__heading-03 u-fade-in-left"><span>プラットフォーム</span></h3>
+                    <ul class="p-explan__list u-fade-in-left">
+                        <li class="p-explan__list-item"><a class="p-explan__list-link u-icon-external" href="https://github.com/kensuke0518" target="_blank"><i class="fab fa-github-alt"></i> Github</a></li>
+                        <li class="p-explan__list-item"><a class="p-explan__list-link u-icon-external" href="https://codepen.io/ken5uke0518/pens/public?cursor=ZD0xJm89MCZwPTEmdj00MDQxNTQwNQ==" target="_blank"><i class="fab fa-codepen"></i> CodePen</a></li>
                     </ul>
                 </section>
                 <section>
-                    <h3 class="p-explan__block-title fade-in-left"><span>制作物</span></h3>
-                    <ul class="p-explan__block fade-in-left">
-                        <li class="p-explan__block-item">
-                            <p><a href="https://limitless-fortress-24466.herokuapp.com/" target="_blank">MongoDB + Express + React.js + HerokuでTodoアプリ</a>（別ウインドウで開きます）<a href="https://github.com/kensuke0518/todolist02" target="_blank">※Github</a></p>
+                    <h3 class="p-explan__heading-03 u-fade-in-left"><span>制作物</span></h3>
+                    <ul class="p-explan__list u-fade-in-left">
+                        <li class="p-explan__list-item">
+                            <p><a class="p-explan__list-link u-icon-external" href="https://limitless-fortress-24466.herokuapp.com/" target="_blank">MongoDB + Express + React.js + HerokuでTodoアプリ</a>：<a class="p-explan__list-link u-icon-external" href="https://github.com/kensuke0518/todolist02" target="_blank"><i class="fab fa-github-alt"></i> Github</a></p>
                         </li>
-                        <li class="p-explan__block-item">
-                            <p><a href="http://kwordpress.wp.xdomain.jp/" target="_blank">WordPress最小テーマ作成</a>（別ウインドウで開きます）<a href="https://github.com/kensuke0518/WordPress1" target="_blank">※Github</a></p>
+                        <li class="p-explan__list-item">
+                            <p><a class="p-explan__list-link u-icon-external" href="http://kwordpress.wp.xdomain.jp/" target="_blank">WordPress最小テーマ作成</a>：<a class="p-explan__list-link u-icon-external" href="https://github.com/kensuke0518/WordPress1" target="_blank"><i class="fab fa-github-alt"></i> Github</a></p>
+                        </li>
+                        <li class="p-explan__list-item">
+                            <p><a class="p-explan__list-link" href="#">ポートフォリオ</a>：<a class="p-explan__list-link u-icon-external" href="https://github.com/kensuke0518/myPortfolio1" target="_blank"><i class="fab fa-github-alt"></i> Github</a></p>
                         </li>
                     </ul>
                 </section>
             </section>
-            <section class="p-explan" id="#section02">
-                <h2 class="p-explan__title fade-in-left"><span>使用言語や技術</span></h2>
-                <section>
-                    <h3 class="p-explan__block-title fade-in-left"><span>HTML</span></h3>
-                    <div class="p-explan__block">
-                        <p>経験時間：8年</p>
-                        <p>HTML4、XHTML、HTML5でのコーディングやSEOに沿ったコーディングの経験があります。</p>
-                    </div>
-                </section>
-                <section>
-                    <h3 class="p-explan__block-title fade-in-left"><span>CSS</span></h3>
-                    <div class="p-explan__block">
-                        <p>経験時間：8年</p>
-                        <p>スマートフォン、タブレット、PCのレスポンシブコーディングの経験があります。CSS3を用いたレスポンシブコーディングは問題ないかと思います。</p>
-                    </div>
-                </section>
-                <section>
-                    <h3 class="p-explan__block-title fade-in-left"><span>JavaScript</span></h3>
-                    <div class="p-explan__block">
-                        <p>経験時間：1年程度</p>
-                        <p>実務ではjQueryの使用が多かったです。<br>目標としてJavaScriptを完全に理解してチームやクライアントにより良い提案や貢献ができるようにしたいと考えています。そのため日々努めていきます。</p>
-                    </div>
-                </section>
-                <section>
-                    <h3 class="p-explan__block-title fade-in-left"><span>その他</span></h3>
-                    <section>
-                        <h4>Node.js</h4>
-                        <p>経験時間：実務経験なし。学習期間としては2ヶ月程度</p>
-                        <p>Express + MongoDB + React.jsを用いたMERNスタック環境を勉強中です。</p>
-                    </section>
-                    <section>
-                        <h4>React.js</h4>
-                        <p>経験時間：実務経験なし。学習期間としては2ヶ月程度。</p>
-                        <p>上記MERNスタックに関連して、非同期処理とAPIを用いたSPAページを勉強中です。<br>特にReact.js（もしくは他のフレームワーク）は今後も自学や自主開発でも用いていきたいと思っています。</p>
-                    </section>
-                    <section>
-                        <h4>Next.js</h4>
-                        <p>経験時間：実務経験なし。学習期間としては1ヶ月程度。</p>
-                        <p>自学として、APIs+Firebase（+Redux）を用いたJAMスタック環境を勉強中です。</p>
-                    </section>
-                    <section>
-                        <h4>git</h4>
-                        <p>経験時間：2ヶ月程度</p>
-                        <p>実務にて1-2回触った程度経験があります。<br>勉強に際して、GitHubやDocker、Herokuを用いています。<br>gitの使用にはSourceTreeを主に用いていて、時々CLI（クローンやプッシュ、コミット程度）を使っています。<br>gitでの効果的なワークフローに興味があり、勉強できればと思っています。</p>
-                    </section>
-                    <section>
-                        <h4>Sass</h4>
-                        <p>経験時間：2ヶ月程度</p>
-                        <p>コーディングするのみであれば問題ないと思います。<br>BEMやFLOCSSなどCSS設計に興味があります。サイトを構築するにあたり、ガイドラインを考案できるように努めていきたいです。</p>
-                    </section>
-                    <section>
-                        <h4>NPMを用いたコーディング</h4>
-                        <p>経験時間：実務経験1-2回</p>
-                        <p>前社ではHTML4やXHTML、HTML5での改修作業や、フィーチャーフォン、メルマガの作成、Sassを用いずCSSを記述する機会が多く、NPMを用いたコーディングの経験は1-2回程度でした。<br>NPMを用いた開発やWebpack,Babel,各種Lintなど用いた開発について今後も更に追究していきます。</p>
-                    </section>
-                    <section>
-                        <h4>正規表現</h4>
-                        <p>仕事の効率化、プログラム内での使用程度であれば問題ありません。<br>前社では正規表現+JavaScript（jQuery）を用いた効率化ツールを自作して、チーム内で活用していました。</p>
-                    </section>
-                    <section>
-                        <h4>WordPress + PHP</h4>
-                        <p>経験時間：実務経験なし。学習期間としては1ヶ月程度</p>
-                        <p>WordPressは最小のテーマ作成程度、PHPは実務で読む機会が何度かありました。</p>
-                    </section>
-                </section>
+            <section class="p-bullets" id="section02">
+                <div class="p-bullets__inner">
+                    <h2 class="p-bullets__heading-02 u-fade-in-left"><span>使用言語や技術</span></h2>
+                    <ul class="p-bullets__list">
+                        <li class="p-bullets__list-item u-fade-in-bottom">
+                            <p class="p-bullets__title"><span>HTML</span></p>
+                            <div class="p-bullets__block">
+                                <p>経験時間：8年</p>
+                                <p>HTML4、XHTML、HTML5でのコーディングやSEOに沿ったコーディングの経験があります。</p>
+                            </div>
+                        </li>
+                        <li class="p-bullets__list-item u-fade-in-bottom">
+                            <p class="p-bullets__title"><span>CSS</span></p>
+                            <div class="p-bullets__block">
+                                <p>経験時間：8年</p>
+                                <p>スマートフォン、タブレット、PCのレスポンシブコーディングの経験があります。CSS3を用いたレスポンシブコーディングは問題ないかと思います。</p>
+                            </div>
+                        </li>
+                        <li class="p-bullets__list-item u-fade-in-bottom">
+                            <p class="p-bullets__title"><span>JavaScript</span></p>
+                            <div class="p-bullets__block">
+                                <p>経験時間：1年程度</p>
+                                <p>実務ではjQueryの使用が多かったです。<br>目標としてJavaScriptを完全に理解してチームやクライアントにより良い提案や貢献ができるようにしたいと考えています。そのため日々努めていきます。</p>
+                            </div>
+                        </li>
+                        <li class="p-bullets__list-item u-fade-in-bottom">
+                            <p class="p-bullets__title"><span>その他</span></p>
+                            <ul class="p-other__list">
+                                <li class="p-other__list-item">
+                                    <p class="p-other__title">Node.js</p>
+                                    <div class="p-other__block">
+                                        <p>経験時間：実務経験なし。学習期間としては3ヶ月程度</p>
+                                        <p>Express + MongoDB + React.jsを用いたMERNスタック環境を勉強中です。</p>
+                                    </div>
+                                </li>
+                                <li class="p-other__list-item">
+                                    <p class="p-other__title">React.js</p>
+                                    <div class="p-other__block">
+                                        <p>経験時間：実務経験なし。学習期間としては3ヶ月程度。</p>
+                                        <p>上記MERNスタックに関連して、非同期処理とAPIを用いたSPAページを勉強中です。<br>特にReact.js（もしくは他のフレームワーク）は今後も自学や自主開発でも用いていきたいと思っています。</p>
+                                    </div>
+                                </li>
+                                <li class="p-other__list-item">
+                                    <p class="p-other__title">Next.js</p>
+                                    <div class="p-other__block">
+                                        <p>経験時間：実務経験なし。学習期間としては1ヶ月程度。</p>
+                                        <p>自学として、APIs+Firebase（+Redux）を用いたJAMスタック環境を勉強中です。</p>
+                                    </div>
+                                </li>
+                                <li class="p-other__list-item">
+                                    <p class="p-other__title">git</p>
+                                    <div class="p-other__block">
+                                        <p>経験時間：2ヶ月程度</p>
+                                        <p>実務にて1-2回触った程度経験があります。<br>勉強に際して、GitHubやDocker、Herokuを用いています。<br>gitの使用にはSourceTreeを主に用いていて、時々CLI（クローンやプッシュ、コミット程度）を使っています。<br>gitでの効果的なワークフローに興味があり、勉強できればと思っています。</p>
+                                    </div>
+                                </li>
+                                <li class="p-other__list-item">
+                                    <p class="p-other__title">Sass</p>
+                                    <div class="p-other__block">
+                                        <p>経験時間：2ヶ月程度</p>
+                                        <p>コーディングするのみであれば問題ないと思います。<br>BEMやFLOCSSなどCSS設計に興味があります。サイトを構築するにあたり、ガイドラインを考案できるように努めていきたいです。</p>
+                                    </div>
+                                </li>
+                                <li class="p-other__list-item">
+                                    <p class="p-other__title">NPMを用いたコーディング</p>
+                                    <div class="p-other__block">
+                                        <p>経験時間：実務経験1-2回</p>
+                                        <p>前社ではHTML4やXHTML、HTML5での改修作業や、フィーチャーフォン、メルマガの作成、Sassを用いずCSSを記述する機会が多く、NPMを用いたコーディングの経験は1-2回程度でした。<br>NPMを用いた開発やWebpack,Babel,各種Lintなど用いた開発について今後も更に追究していきます。</p>
+                                    </div>
+                                </li>
+                                <li class="p-other__list-item">
+                                    <p class="p-other__title">正規表現</p>
+                                    <div class="p-other__block">
+                                        <p>仕事の効率化、プログラム内での使用程度であれば問題ありません。<br>前社では正規表現+JavaScript（jQuery）を用いた効率化ツールを自作して、チーム内で活用していました。</p>
+                                    </div>
+                                </li>
+                                <li class="p-other__list-item">
+                                    <p class="p-other__title">WordPress + PHP</p>
+                                    <div class="p-other__block">
+                                        <p>経験時間：実務経験なし。学習期間としては1ヶ月程度</p>
+                                        <p>WordPressは最小のテーマ作成程度、PHPは実務で読む機会が何度かありました。</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
             </section>
         </div><!-- /#main -->
     </main>

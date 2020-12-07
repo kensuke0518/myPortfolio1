@@ -1,0 +1,7 @@
+$fiveNum:0;
+@while $fiveNum < 50{
+    .u-mb#{$fiveNum}{
+        margin-bottom:$fiveNum + px;
+    }
+    $fiveNum: $fiveNum + 5
+}

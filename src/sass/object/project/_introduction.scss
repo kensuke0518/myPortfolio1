@@ -16,6 +16,7 @@
         z-index:5;
     }
     &__video{
+        float: right;
         min-height: 100vh;
         min-width: 100%;
         z-index: 1;
@@ -48,7 +49,7 @@
         font-size: $fSize;
         font-weight: $fWeight;
     }
-    &__title{
+    &__heading{
         @include introText();
     }
     &__text{
@@ -61,11 +62,12 @@
     padding: 50px;
 }
 .p-explan{
-    @include sectionBlock($img:'01');
-    &__title{
-        margin: 0 0 20px;
+    padding: 50px 50px 100px;
+
+    &__heading-02{
+        margin: 0 0 50px;
     }
-    &__title > span{
+    &__heading-02 > span{
         background: $themeColor;
         color: #fff;
         display: inline-block;
@@ -73,24 +75,84 @@
         font-weight: bold;
         padding: 10px;
     }
-    &__block-title > span{
-        background: rgba(220, 20, 60, .5);
+    &__heading-03 > span{
+        background: rgba(220, 20, 60, 1);
         color: #fff;
         display: inline-block;
         font-size: 30px;
         font-weight: bold;
         padding: 10px;
     }
-    &__block{
-        background: rgba(0,0,0,.5);
-        color: #fff;
+    &__list{
+        background: #dadada;
+        color: #000;
         padding: 10px 20px 20px;
     }
-    &__block-item{
+    &__list-item{
         font-size: 20px;
         margin: 10px 0 0;
     }
+    &__list-link{
+        color: $themeColor;
+    }
 }
-.p-second{
-    @include sectionBlock($img:'02');
+.p-bullets{
+    @include sectionBlock($img:'01');
+    position: relative;
+
+    /*&::after{
+        background: rgba(0,0,0,.7);
+        content:'';
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top:0;
+        width: 100%;
+        z-index:2
+    }*/
+    &__inner{
+        background:rgba(255, 255, 255, .9);
+        padding: 20px;
+    }
+    &__heading-02{
+        color: $themeColor;
+        font-size: 30px;
+        font-weight: bold;
+        padding:10px;
+    }
+    &__list{
+        padding:10px;
+    }
+    &__list-item{
+        padding:10px;
+    }
+    &__title{
+        border-bottom: 2px solid $themeColor;
+        font-size: 20px;
+        padding:10px;
+    }
+    &__block{
+        line-height: 1.5;
+        padding:10px;
+    }
+}
+.p-other{
+    padding: 50px;
+
+    &__list{
+        padding:10px;
+    }
+    &__list-item{
+        padding:10px;
+    }
+    &__title{
+        border-left: 5px solid $themeColor;
+        font-size: 18px;
+        font-weight: bold;
+        padding:0 10px;
+    }
+    &__block{
+        line-height: 1.5;
+        padding:10px;
+    }
 }

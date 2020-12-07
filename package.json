@@ -29,7 +29,7 @@
   },
   "homepage": "https://github.com/kensuke0518/myPortfolio1#readme",
   "devDependencies": {
-    "autoprefixer": "^10.0.3",
+    "autoprefixer": "^9.8.6",
     "browser-sync": "^2.26.13",
     "chokidar-cli": "^2.1.0",
     "css-declaration-sorter": "^6.0.2",

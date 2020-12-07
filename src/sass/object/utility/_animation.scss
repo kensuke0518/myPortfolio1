@@ -1,4 +1,4 @@
-.fade-in-left{
+.u-fade-in-left{
     animation: duration 2s;
     animation-delay: 0;
     animation-direction: 1;
@@ -11,10 +11,31 @@
 @keyframes fade-in-left{
     0%{
         opacity: 0;
-        transform:translateX(-100px);
+        transform:translateX(-50px);
     }
     100%{
         opacity: 1;
         transform:translateX(0);
+    }
+}
+
+.u-fade-in-bottom{
+    animation: duration 2s;
+    animation-delay: 0;
+    animation-direction: 1;
+    animation-direction: normal;
+    animation-fill-mode:forwards;
+    animation-name:fade-in-bottom;
+    animation-play-state: running;
+    animation-timing-function: ease-in-out;
+}
+@keyframes fade-in-bottom{
+    0%{
+        opacity: 0;
+        transform:translateY(20px);
+    }
+    100%{
+        opacity: 1;
+        transform:translateY(0);
     }
 }
