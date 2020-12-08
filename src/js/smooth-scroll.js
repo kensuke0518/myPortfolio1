@@ -10,5 +10,6 @@ module.exports.func = () => {
                 block: "start"
             })
         })
+        return false;
     }
 }
