@@ -16,6 +16,7 @@
     "allrun": "run-s format:sass compile:sass mq autoprefix",
     "watch:sass": "chokidar \"src/**/*.scss\" --command \"npm run allrun\"",
     "browsersync": "browser-sync start -s docs -w docs/*/*.html docs/*/*.css docs/*/*.js",
+    "build:webpack":"webpack",
     "watch": "npm run watch:sass & npm run browsersync"
   },
   "repository": {
@@ -30,7 +31,10 @@
   },
   "homepage": "https://github.com/kensuke0518/myPortfolio1#readme",
   "devDependencies": {
+    "@babel/core": "^7.12.9",
+    "@babel/preset-env": "^7.12.7",
     "autoprefixer": "^9.8.6",
+    "babel-loader": "^8.2.2",
     "browser-sync": "^2.26.13",
     "chokidar-cli": "^2.1.0",
     "css-declaration-sorter": "^6.0.2",
@@ -42,6 +46,9 @@
     "stylelint-config-recommended": "^3.0.0",
     "stylelint-config-recommended-scss": "^4.2.0",
     "stylelint-order": "^4.1.0",
-    "stylelint-scss": "^3.18.0"
-  }
+    "stylelint-scss": "^3.18.0",
+    "webpack": "^5.10.0",
+    "webpack-cli": "^4.2.0"
+  },
+  "dependencies": {}
 }

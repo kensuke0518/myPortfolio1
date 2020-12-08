@@ -44,25 +44,32 @@
         width: 100%;
         z-index:10;
     }
-    @mixin introText($color:#fff,$fSize:70px,$fWeight:bold){
+    @mixin introText($color:#fff,$fWeight:bold){
         color:$color;
-        font-size: $fSize;
         font-weight: $fWeight;
     }
     &__heading{
         @include introText();
+        @include fz(70);
     }
     &__text{
-        @include introText($fSize:30px,$fWeight:normal);
+        @include introText($fWeight:normal);
+        @include fz(30);
     }
 }
 @mixin sectionBlock($img){
     background:url("../images/image"+$img+".jpg") 0 0 no-repeat;
     background-size: cover;
     padding: 50px;
+    @include mq(){
+        padding: 50px 0 100px;
+    }
 }
 .p-explan{
     padding: 50px 50px 100px;
+    @include mq(){
+        padding: 50px 5% 100px;
+    }
 
     &__heading-02{
         margin: 0 0 50px;
@@ -71,17 +78,17 @@
         background: $themeColor;
         color: #fff;
         display: inline-block;
-        font-size: 40px;
         font-weight: bold;
         padding: 10px;
+        @include fz(40);
     }
     &__heading-03 > span{
         background: rgba(220, 20, 60, 1);
         color: #fff;
         display: inline-block;
-        font-size: 30px;
         font-weight: bold;
         padding: 10px;
+        @include fz(30);
     }
     &__list{
         background: #dadada;
@@ -89,11 +96,15 @@
         padding: 10px 20px 20px;
     }
     &__list-item{
-        font-size: 20px;
+        @include fz(20);
         margin: 10px 0 0;
     }
     &__list-link{
         color: $themeColor;
+        text-decoration: underline;
+        &:hover{
+            text-decoration: none;
+        }
     }
 }
 .p-bullets{
@@ -113,12 +124,15 @@
     &__inner{
         background:rgba(255, 255, 255, .9);
         padding: 20px;
+        @include mq(){
+            padding: 20px 0;
+        }
     }
     &__heading-02{
         color: $themeColor;
-        font-size: 30px;
         font-weight: bold;
         padding:10px;
+        @include fz(30);
     }
     &__list{
         padding:10px;
@@ -141,6 +155,9 @@
 
     &__list{
         padding:10px;
+        @include mq(){
+            padding: 10px 0;
+        }
     }
     &__list-item{
         padding:10px;

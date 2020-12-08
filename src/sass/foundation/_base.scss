@@ -18,6 +18,16 @@ a:hover{
 /* box-sizingの指定 https://jajaaan.co.jp/web-production/frontend/box-sizing/ */
 html{
     box-sizing: border-box;
+    font-size: 62.5%;
+    @include mq(){
+        font-size: 50%;
+    }
+}
+body{
+    @include fz();
+    @include mq(){
+        font-size: 16px;
+    }
 }
 *,
 *::before,

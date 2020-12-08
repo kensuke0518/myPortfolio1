@@ -1,0 +1,20 @@
+//テーマカラー
+$themeColor:#dc143c;
+
+//メディアクエリ
+$breakpoints: (
+  'sm': 'screen and (max-width: 400px)',
+  'lg': 'screen and (max-width: 1000px)',
+) !default;
+@mixin mq($breakpoint: sm) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}
+
+//フォントサイズ
+//20px以上のフォントの指定には下記を用いる。20px以下であればピクセル固定値で指定。
+//上記の理由は、スマホ時にメディアクエリでhtml要素フォントサイズを変更しているから。
+@mixin fz($size: 16) {
+  font-size: ($size / 10) + rem;
+}
