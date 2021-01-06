@@ -8,16 +8,58 @@ header{
     margin: 0 auto;
     padding: 10px;
     width:100%;
+    @include mq(){
+        position:relative;
+    }
 }
 .header__heading01{
     padding: 0 20px;
 }
+#gnav{
+    @include mq(){
+        background: rgba($color: #fff, $alpha: 0.9);
+        height: 100%;
+        left:100%;
+        padding: 40px 20px 20px;
+        position: fixed;
+        top:0;
+        transition: all 0.2s ease-out;
+        width: 100%;
+        z-index:20;
+    }
+    &.gnav__open{
+        left:0;
+    }
+}
+.gnav__title{
+    @include mq(){
+        color: #333;
+        @include fz(40);
+    }
+}
 .gnav__list{
     display: flex;
+    @include mq(){
+        display: block;
+    }
 }
 .gnav__item{
     padding: 0 0 0 20px;
+    @include mq(){
+        margin: 20px 0 0;
+        padding: 0;
+        @include fz(25);
+    }
 }
 .gnav__item > a{
     color:#fff;
+    @include mq(){
+        color:#333;
+    }
+}
+.gnav__menu-button{
+    margin-left: auto;
+}
+#gnav__menu-button__icon{
+    color: #fff;
 }

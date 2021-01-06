@@ -24,6 +24,7 @@ html{
     }
 }
 body{
+    color: #333;
     @include fz();
     @include mq(){
         font-size: 16px;

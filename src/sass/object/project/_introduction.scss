@@ -51,6 +51,9 @@
     &__heading{
         @include introText();
         @include fz(70);
+        @include mq(){
+            @include fz(50);
+        }
     }
     &__text{
         @include introText($fWeight:normal);
@@ -69,7 +72,7 @@
     padding: 50px 50px 100px;
     text-align: center;
     @include mq(){
-        padding: 50px 5% 100px;
+        padding: 50px 5% 50px;
         text-align: left;
     }
 
@@ -120,7 +123,7 @@
 .p-explan{
     padding: 50px 50px 100px;
     @include mq(){
-        padding: 50px 5% 100px;
+        padding: 50px 5% 50px;
     }
 
     &__heading-02{
@@ -195,6 +198,7 @@
     &__title{
         border-bottom: 2px solid $themeColor;
         font-size: 20px;
+        font-weight: bold;
         padding:10px;
     }
     &__block{

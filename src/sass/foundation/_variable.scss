@@ -4,9 +4,10 @@ $themeColor:#dc143c;
 //メディアクエリ
 $breakpoints: (
   'sm': 'screen and (max-width: 400px)',
+  'md': 'screen and (max-width: 600px)',
   'lg': 'screen and (max-width: 1000px)',
 ) !default;
-@mixin mq($breakpoint: sm) {
+@mixin mq($breakpoint: md) {
   @media #{map-get($breakpoints, $breakpoint)} {
     @content;
   }
@@ -17,4 +18,9 @@ $breakpoints: (
 //上記の理由は、スマホ時にメディアクエリでhtml要素フォントサイズを変更しているから。
 @mixin fz($size: 16) {
   font-size: ($size / 10) + rem;
+}
+
+//スマホ時の改行調整
+@media screen and (min-width: 600px){
+  .br-sp {display: none; }
 }

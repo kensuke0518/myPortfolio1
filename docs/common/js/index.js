@@ -9,13 +9,23 @@
 /******/ (function() { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/js/gnav-menu.js":
+/*!*****************************!*
+  !*** ./src/js/gnav-menu.js ***!
+  \*****************************/
+/***/ (function(module) {
+
+eval("module.exports.func = function () {\n  var menuButton = document.getElementById('gnav__menu-button__icon');\n  var gnav = document.getElementById('gnav');\n  var gnavItem = document.getElementsByClassName('gnav__item'); //メニューの開閉\n\n  menuButton.addEventListener('click', function () {\n    gnav.classList.add('gnav__open');\n  });\n\n  for (var i = 0; i < gnavItem.length; i++) {\n    gnavItem[i].addEventListener('click', function () {\n      gnav.classList.remove('gnav__open');\n    });\n  }\n};\n\n//# sourceURL=webpack://app_20201127_myPortfolio/./src/js/gnav-menu.js?");
+
+/***/ }),
+
 /***/ "./src/js/scroll-load.js":
 /*!*******************************!*
   !*** ./src/js/scroll-load.js ***!
   \*******************************/
 /***/ (function(module) {
 
-eval("module.exports.func = function () {\n  window.addEventListener('scroll', function () {\n    var triggerClass = document.querySelectorAll('.scroll-trigger');\n    var animateClass = 'is-show';\n\n    for (var i = 0; i < triggerClass.length; i++) {\n      var scroll = window.pageYOffset;\n      var triggerTop = triggerClass[i].getBoundingClientRect().top;\n      var windowHeight = window.outerHeight;\n\n      if (scroll > triggerTop - windowHeight / 2) {\n        triggerClass[i].classList.add(animateClass);\n      }\n    }\n  });\n};\n\n//# sourceURL=webpack://app_20201127_myPortfolio/./src/js/scroll-load.js?");
+eval("module.exports.func = function () {\n  window.addEventListener('scroll', function () {\n    var triggerClass = document.querySelectorAll('.scroll-trigger');\n    var animateClass = 'is-show';\n\n    for (var i = 0; i < triggerClass.length; i++) {\n      var scroll = window.pageYOffset || document.documentElement.scrollTop;\n      var triggerTop = triggerClass[i].getBoundingClientRect().top;\n      var offset = triggerTop + scroll;\n      var windowHeight = window.innerHeight;\n\n      if (scroll > offset - windowHeight + 150) {\n        triggerClass[i].classList.add(animateClass);\n      }\n    }\n  });\n};\n\n//# sourceURL=webpack://app_20201127_myPortfolio/./src/js/scroll-load.js?");
 
 /***/ }),
 
@@ -59,7 +69,7 @@ eval("module.exports.func = function () {\n  var a = document.getElementsByTagNa
 /*!*************************!*
   !*** ./src/js/index.js ***!
   \*************************/
-eval("var scrollLoad = __webpack_require__(/*! ./scroll-load */ \"./src/js/scroll-load.js\");\n\nvar smoothScroll = __webpack_require__(/*! ./smooth-scroll */ \"./src/js/smooth-scroll.js\");\n\nscrollLoad.func();\nsmoothScroll.func();\n\n//# sourceURL=webpack://app_20201127_myPortfolio/./src/js/index.js?");
+eval("var scrollLoad = __webpack_require__(/*! ./scroll-load */ \"./src/js/scroll-load.js\");\n\nvar smoothScroll = __webpack_require__(/*! ./smooth-scroll */ \"./src/js/smooth-scroll.js\");\n\nvar gnavMenu = __webpack_require__(/*! ./gnav-menu */ \"./src/js/gnav-menu.js\");\n\nscrollLoad.func();\nsmoothScroll.func();\ngnavMenu.func();\n\n//# sourceURL=webpack://app_20201127_myPortfolio/./src/js/index.js?");
 }();
 /******/ })()
 ;
