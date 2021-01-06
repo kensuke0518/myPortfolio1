@@ -65,6 +65,58 @@
         padding: 50px 0 100px;
     }
 }
+.p-about{
+    padding: 50px 50px 100px;
+    text-align: center;
+    @include mq(){
+        padding: 50px 5% 100px;
+        text-align: left;
+    }
+
+    &__heading-02{
+        align-items: center;
+        color: rgba(220, 20, 60, 1);
+        display: flex;
+        font-size: 4rem;
+        margin: 30px 0;
+        &::before,&::after{
+            content:"";
+            display: block;
+            flex-grow:1;
+            height: 2px;
+        }
+        &::before{
+            background: linear-gradient(-90deg,rgba(220, 20, 60, 1), transparent);
+            margin-right: .4em;
+        }
+        &::after{
+            background: linear-gradient(90deg, rgba(220, 20, 60, 1), transparent);
+            margin-left: .4em;
+        }
+    }
+    &__heading-03{
+        @extend .p-about__heading-02;
+        font-size: 3rem;
+        margin: 30px auto;
+        width: 75%;
+    }
+    &__list{
+        background: #dadada;
+        color: #000;
+        padding: 10px 20px 20px;
+    }
+    &__list-item{
+        @include fz(20);
+        margin: 10px 0 0;
+    }
+    &__list-link{
+        color: $themeColor;
+        text-decoration: underline;
+        &:hover{
+            text-decoration: none;
+        }
+    }
+}
 .p-explan{
     padding: 50px 50px 100px;
     @include mq(){
