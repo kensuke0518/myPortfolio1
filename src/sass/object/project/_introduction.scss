@@ -161,6 +161,17 @@
             text-decoration: none;
         }
     }
+    &__list-def{
+        @include fz(16);
+        margin:0 0 0 20px;
+        &__term{
+            color: $themeColor;
+            margin:10px 0 0 0;
+        }
+        &__desc{
+            margin:3px 0 0 15px;
+        }
+    }
 }
 .p-bullets{
     @include sectionBlock($img:'01');

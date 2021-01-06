@@ -1,7 +1,7 @@
 module.exports.func = () => {
     window.addEventListener('scroll', function () {
-        let triggerClass = document.querySelectorAll('.scroll-trigger');
-        let animateClass = 'is-show';
+        const triggerClass = document.querySelectorAll('.scroll-trigger');
+        const animateClass = 'is-show';
 
         for (let i = 0; i < triggerClass.length; i++) {
             const scroll = window.pageYOffset || document.documentElement.scrollTop;
