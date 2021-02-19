@@ -19,7 +19,13 @@
                     <li class="gnav__item br-sp"><a href="javascript:void(0)">MENUを閉じる</a></li>
                 </ul>
             </nav>
-            <p class="gnav__menu-button br-sp"><a href="javascript:void(0)" id="gnav__menu-button__icon"><i class="fas fa-bars"></i></a></p>
+            <div class="gnav__left">
+                <div class="c-darkmode">
+                    <input type="checkbox" class="c-darkmode__checkbox" id="aaa" data-dark="dark">
+                    <label for="aaa" class="c-darkmode__btn"><span class="c-darkmode__feature"></span></label>
+                </div>
+                <p class="gnav__menu-button br-sp"><a href="javascript:void(0)" id="gnav__menu-button__icon"><i class="fas fa-bars"></i></a></p>
+            </div>
         </div>
     </header>
     <div class="p-introduction">
@@ -28,27 +34,28 @@
             <h2 class="p-introduction__heading"><ruby><rb>森永健介</rb><rt>もりながけんすけ</rt></ruby>の<br class="br-sp">ポートフォリオ</h2>
         </section>
     </div>
-    <p class="c-copyright u-align__right">映像：ＮＨＫクリエイティブ・ライブラリー</p>
     <main>
         <div id="main">
-            <section class="p-about u-fade-in-bottom scroll-trigger">
-                <h2 class="p-about__heading-02">自己紹介</h2>
-                <section>
-                    <h3 class="p-about__heading-03">ご挨拶</h3>
-                    <p>Flashサイトに感動してマークアップエンジニアとしてキャリアをスタートさせる。</p>
-                    <p class="u-mb20">現在はフロントエンドのスキルを高めながら、総合的な視点でプロジェクトに貢献できるように日々研鑽中です</p>
-                    <p>ユーザーへのより良い体験の提供や、お客様の「こうしたい！」という熱い想いに貢献していきたいです。</p>
-                </section>
-                <section>
-                    <h3 class="p-about__heading-03">経歴</h3>
-                    <p>前職はWeb制作マーケティング会社にマークアップエンジニアとして、大手案件の受託業務に従事していました。</p>
-                </section>
-                <section>
-                    <h3 class="p-about__heading-03">趣味</h3>
-                    <p>漫画、音楽、ドライブ、スポーツ・筋トレ</p>
-                </section>
+            <section class="p-about u-fade-in-bottom scroll-trigger" data-scrlsec="scrlsec">
+                <div class="p-about__inner">
+                    <h2 class="p-about__heading-02">自己紹介</h2>
+                    <section>
+                        <h3 class="p-about__heading-03">ご挨拶</h3>
+                        <p>Flashサイトに感動してマークアップエンジニアとしてキャリアをスタートさせる。</p>
+                        <p class="u-mb20">現在はフロントエンドのスキルを高めながら、総合的な視点でプロジェクトに貢献できるように日々研鑽中です</p>
+                        <p>ユーザーへのより良い体験の提供や、お客様の「こうしたい！」という熱い想いに貢献していきたいです。</p>
+                    </section>
+                    <section>
+                        <h3 class="p-about__heading-03">経歴</h3>
+                        <p>前職はWeb制作マーケティング会社にマークアップエンジニアとして、大手案件の受託業務に従事していました。</p>
+                    </section>
+                    <section>
+                        <h3 class="p-about__heading-03">趣味</h3>
+                        <p>漫画、音楽、ドライブ、スポーツ・筋トレ</p>
+                    </section>
+                </div>
             </section>
-            <section class="p-explan" id="section01">
+            <section class="p-explan" id="section01" data-scrlsec="scrlsec">
                 <h2 class="p-explan__heading-02 u-fade-in-left scroll-trigger"><span>プラットフォームと制作物</span></h2>
                 <section class="u-mb20 u-fade-in-left scroll-trigger">
                     <h3 class="p-explan__heading-03"><span>プラットフォーム</span></h3>
@@ -82,7 +89,7 @@
                     </ul>
                 </section>
             </section>
-            <section class="p-bullets" id="section02">
+            <section class="p-bullets" id="section02" data-scrlsec="scrlsec">
                 <div class="p-bullets__inner">
                     <h2 class="p-bullets__heading-02 u-fade-in-left scroll-trigger"><span>使用言語や技術</span></h2>
                     <ul class="p-bullets__list">

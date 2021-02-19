@@ -1,4 +1,6 @@
-module.exports.func = () => {
+'use strict';
+
+export const gnavMenuFunc = () => {
     const menuButton = document.getElementById('gnav__menu-button__icon');
     const gnav = document.getElementById('gnav');
     const gnavItem = document.getElementsByClassName('gnav__item');

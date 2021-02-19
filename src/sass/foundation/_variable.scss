@@ -1,6 +1,51 @@
 //テーマカラー
 $themeColor:#dc143c;
 
+//色：mapとfunctionの定義
+$siteBgColor:#fff;
+$siteColor:#707070;
+$darkBgColor:#282c34;
+$darkColor:#fff;
+$linkColor:#8dcbf2;
+
+
+$colors:(
+    siteBgC:(
+        base:$siteBgColor,
+        light:lighten($siteBgColor,20%),
+        dark:darken($siteBgColor,20%)
+    ),
+    siteC:(
+        base:$siteColor,
+        light:lighten($siteColor,20%),
+        light30:lighten($siteColor,30%),
+        light35:lighten($siteColor,35%),
+        light40:lighten($siteColor,40%),
+        light45:lighten($siteColor,45%),
+        light50:lighten($siteColor,50%),
+        dark:darken($siteColor,20%)
+    ),
+    darkBgC:(
+        base:$darkBgColor,
+        light:lighten($darkBgColor,20%),
+        dark:darken($darkBgColor,20%)
+    ),
+    darkC:(
+        base:$darkColor,
+        light:lighten($darkColor,20%),
+        dark:darken($darkColor,20%)
+    ),
+    linkC:(
+        base:$linkColor,
+        light:lighten($linkColor,10%),
+        dark:darken($linkColor,10%)
+    ),
+);
+@function color($key,$tone:base){
+    @return map-get(map-get($colors,$key), $tone);
+}
+
+
 //メディアクエリ
 $breakpoints: (
   'sm': 'screen and (max-width: 400px)',
@@ -24,3 +69,15 @@ $breakpoints: (
 @media screen and (min-width: 600px){
   .br-sp {display: none; }
 }
+
+//CSSカスタム変数
+:root{
+    --bgcolor: #{$siteBgColor};
+    --textcolor:#{$siteColor};
+    &[data-colormode="dark"]{
+        --bgcolor:#{$darkBgColor};
+        --textcolor:#{$darkColor};
+    }
+}
+$rgbBG:var(--bgcolor);
+$rgbTX:var(--textcolor);

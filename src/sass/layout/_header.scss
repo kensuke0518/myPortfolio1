@@ -17,7 +17,7 @@ header{
 }
 #gnav{
     @include mq(){
-        background: rgba($color: #fff, $alpha: 0.9);
+        background: var(--bgcolor);
         height: 100%;
         left:100%;
         padding: 40px 20px 20px;
@@ -33,7 +33,7 @@ header{
 }
 .gnav__title{
     @include mq(){
-        color: #333;
+        color: var(--textcolor);
         @include fz(40);
     }
 }
@@ -54,11 +54,15 @@ header{
 .gnav__item > a{
     color:#fff;
     @include mq(){
-        color:#333;
+        color: var(--textcolor);
     }
 }
-.gnav__menu-button{
+.gnav__left{
     margin-left: auto;
+    display: flex;
+}
+.gnav__menu-button{
+    margin-left:10px;
 }
 #gnav__menu-button__icon{
     color: #fff;

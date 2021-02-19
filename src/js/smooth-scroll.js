@@ -1,4 +1,6 @@
-module.exports.func = () => {
+'use strict';
+
+export const smoothScrollFunc = () => {
     const a = document.getElementsByTagName('a');
     for (let i = 0; i < a.length; i++) {
         a[i].addEventListener('click', e => {
@@ -12,7 +14,6 @@ module.exports.func = () => {
                 const targetId = target.hash
                 document.querySelector(targetId).scrollIntoView({
                     behavior: "smooth",
-                    block: "start"
                 })
                 return false;
             }

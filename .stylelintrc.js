@@ -9,6 +9,6 @@ module.exports = {
     rules: {
         'color-hex-case': 'lower',
         'color-hex-length': 'short',
-        'order/properties-alphabetical-order': true,
+        'order/properties-order': true,
     },
 }

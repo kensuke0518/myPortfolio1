@@ -71,11 +71,13 @@
 .p-about{
     padding: 50px 50px 100px;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     @include mq(){
         padding: 50px 5% 50px;
         text-align: left;
     }
-
     &__heading-02{
         align-items: center;
         color: rgba(220, 20, 60, 1);
@@ -188,7 +190,7 @@
         z-index:2
     }*/
     &__inner{
-        background:rgba(255, 255, 255, .9);
+        background:var(--bgcolor);
         padding: 20px;
         @include mq(){
             padding: 20px 0;

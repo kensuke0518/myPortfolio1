@@ -1,7 +1,13 @@
-const scrollLoad = require('./scroll-load');
-const smoothScroll = require('./smooth-scroll');
-const gnavMenu = require('./gnav-menu');
+'use strict';
 
-scrollLoad.func();
-smoothScroll.func();
-gnavMenu.func();
+import { scrollLoadFunc } from './scroll-load.js';
+import { smoothScrollFunc } from './smooth-scroll.js';
+import { gnavMenuFunc } from './gnav-menu.js';
+import { scrollSectionFunc } from './scroll-section.js';
+import { darkFunc } from './dark.js';
+
+scrollLoadFunc();
+gnavMenuFunc();
+scrollSectionFunc();
+smoothScrollFunc();
+darkFunc();

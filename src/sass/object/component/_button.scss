@@ -1,0 +1,36 @@
+.c-darkmode{
+    background: #707070;
+    border-radius: 30px;
+    height: 20px;
+    width: 48px;
+    &__btn{
+        cursor: pointer;
+        position: relative;
+        &::before{
+            background:#fff;
+            border-radius: 21px;
+            box-sizing: border-box;
+            content:"";
+            display: block;
+            height: 24px;
+            left: 0;
+            position: absolute;
+            top: -2px;
+            transition: all 250ms ease-in;
+            width: 24px;
+        }
+    }
+    input[type="checkbox"]{
+        display:none;
+        &:checked{
+            + .c-darkmode__btn{
+                &::before{
+                    background-color: darkblue;
+                    border: 2px solid yellow;
+                    transform:translate(24px)
+                }
+            }
+        }
+    }
+
+}

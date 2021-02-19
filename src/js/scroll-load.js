@@ -1,4 +1,6 @@
-module.exports.func = () => {
+'use strict';
+
+export const scrollLoadFunc = () => {
     window.addEventListener('scroll', function () {
         const triggerClass = document.querySelectorAll('.scroll-trigger');
         const animateClass = 'is-show';
