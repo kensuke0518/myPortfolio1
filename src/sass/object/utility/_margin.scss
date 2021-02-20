@@ -1,7 +1,19 @@
-$fiveNum:0;
-@while $fiveNum < 50{
-    .u-mb#{$fiveNum}{
-        margin-bottom:$fiveNum + px;
+$marginNum:0;
+@while $marginNum < 100{
+    .u-m#{$marginNum}{
+        margin:$marginNum + px;
     }
-    $fiveNum: $fiveNum + 5
+    .u-mt#{$marginNum}{
+        margin-top:$marginNum + px;
+    }
+    .u-mr#{$marginNum}{
+        margin-right:$marginNum + px;
+    }
+    .u-mb#{$marginNum}{
+        margin-bottom:$marginNum + px;
+    }
+    .u-ml#{$marginNum}{
+        margin-left:$marginNum + px;
+    }
+    $marginNum: $marginNum + 1;
 }

@@ -3,3 +3,56 @@
     font-size: 12px;
     font-weight: normal;
 }
+
+.c-gauge{
+    margin-top: 25px;
+    position: relative;
+    @include mq(){
+        margin-top: 15px;
+    }
+    &:first-child{
+        margin-top: 0;
+    }
+    [data-gauge-val]{
+        color: $rgbTX;
+    }
+    &__char{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 30px;
+        font-size: 2rem;
+        font-weight: bold;
+        z-index: 100;
+        @include mq(){
+            position: static;
+            transform: translateY(0);
+            margin-bottom: 5px;
+        }
+    }
+    &__bar{
+        width: 100%;
+        height: 40px;
+        background-color: #dadada;
+        border-radius: 20px;
+        position: relative;
+        @include mq(){
+            height: 20px;
+        }
+        [data-gauge-inc]{
+            display: flex;
+            align-items: center;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0;
+            padding: 5px 0 5px 20px;
+            height: 40px;
+            background:linear-gradient(135deg, $rgbTM 0%,$themeColor) ;
+            border-radius: 20px;
+            @include mq(){
+                height: 20px;
+            }
+        }
+    }
+}

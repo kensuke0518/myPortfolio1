@@ -1,0 +1,19 @@
+$paddingNum:0;
+@while $paddingNum < 100{
+    .u-p#{$paddingNum}{
+        padding:$paddingNum + px;
+    }
+    .u-pt#{$paddingNum}{
+        padding-top:$paddingNum + px;
+    }
+    .u-pr#{$paddingNum}{
+        padding-right:$paddingNum + px;
+    }
+    .u-pb#{$paddingNum}{
+        padding-bottom:$paddingNum + px;
+    }
+    .u-pl#{$paddingNum}{
+        padding-left:$paddingNum + px;
+    }
+    $paddingNum: $paddingNum + 1;
+}

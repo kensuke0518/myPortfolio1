@@ -123,6 +123,8 @@
     }
 }
 .p-explan{
+    display: flex;
+    align-items: center;
     padding: 50px 50px 100px;
     @include mq(){
         padding: 50px 5% 50px;
