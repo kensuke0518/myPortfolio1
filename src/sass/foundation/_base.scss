@@ -31,6 +31,14 @@ body{
         font-size: 16px;
     }
 }
+img{
+    vertical-align: bottom;
+    @include mq(){
+        width:100%;
+        max-width: 100%;
+        height: auto;
+    }
+}
 *,
 *::before,
 *::after{
