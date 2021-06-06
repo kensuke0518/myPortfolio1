@@ -7,7 +7,7 @@ export const scrollSectionFunc = () => {
             data.style.minHeight = window.innerHeight + 'px';
         });
     }
-    const options = {
+    /*const options = {
         root: null,
         rootMargin: '0% 0px',
         threshold: 0.05
@@ -38,7 +38,7 @@ export const scrollSectionFunc = () => {
             })
         })
     }
-    pageLinksOut();
+    pageLinksOut();*/
 
     window.addEventListener('load', secHeight);
     window.addEventListener('resize', secHeight);

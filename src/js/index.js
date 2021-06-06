@@ -9,7 +9,7 @@ import { gaugeFunc,delayGaugeFunc } from './gauge.js';
 
 scrollLoadFunc();
 gnavMenuFunc();
-scrollSectionFunc();
+//scrollSectionFunc();
 smoothScrollFunc();
 darkFunc();
 delayGaugeFunc();
