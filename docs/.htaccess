@@ -1,0 +1,4 @@
+AuthUserFile /.htpasswd
+AuthName "kensuke"
+AuthType BASIC 
+require valid-user 
